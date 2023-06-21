@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.body{
+    background-image: url('../../Static Images/background_signInPage.jpg');
+}
+.nav-top{
+    display: flex;
+}
+.nav-top-left{
+    display: flex;
+    float: left;
+    width: 50%;
+}
+.nav-top-left img{
+    width: 50px;
+    border-radius: 10px;
+    margin: 20px;
+}
+.nav-top-left p{
+    margin: 20px;
+    margin-top: 10px;
+    display: flex;
+    margin-left: 0px;
+    font-size: 25px;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-top-right{
+    display: flex;
+    float: left;
+    width: 50%;
+    text-align: end;
+    align-items: center;
+    justify-content: end;
+}
+.nav-top-right button{
+    margin-right: 20px;
+    font-size: 18px;
+    padding: 5px 8px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: 2px solid rgba(46, 44, 44, 0.64);
+    cursor: pointer;
+}
+/* .main-heading{
+    font-family: 'Roboto', sans-serif;
+} */

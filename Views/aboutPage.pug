@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project File-1 Server Side</title>
+    <link rel="stylesheet" href="../static/CSS/Posting/styles_navbar.css">
+    <link rel="stylesheet" href="../static/CSS/Posting/styles_mainBody.css">
+    <link rel="stylesheet" href="../static/CSS/Posting/side_navbar.css">
+    <script src="../static/JS/Posting/script_main.js"></script>
+</head>
+<body class="body">
+    //- <div class="nav-bar-top">
+    //-     <input type="text" id="user-blog-input-heading" placeholder="Add a Blog">
+    //-     <button onclick="takevalue()" onsubmit="takevalue()">Submit</button>
+    //- </div>
+    <div class="nav-bar-top">
+        <div class="nav-bar">
+            <div class="nav-bar-left">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB2CAMAAADFu/wdAAAAZlBMVEXwajX////wZCrwZi7wbDjwaDHvYCH1po71qZLxcD/wYyf2sJvvXx798OzuUwDxc0TzjWz75N34v6/vWxTvWAv3uafyf1f/+/nxelD73NT6183zk3Txdkn60MX+9fLzh2L0nIH5ybu6kI7XAAAE6klEQVRoge2ba3eqOhCGYzBRQyg3uSOX//8ndwB1o50hCVpcPfu8H7pai3mcXGcmI9nNFEaHruuqqgqCtm3TUXme13Xt+/7pqv1NZND+WdND6nm/rtV7VQttGwRVdbxkcxT5+2t0koJSZxD7JmKt+btVk5TLqgC4PeMrGrcS5YH3xPUq+dPUkSz6B27oiw2oSkweZ9xw72yDVYqPd67nb4dV4OTGDTbq5KtkMXEjuSmWMD8buJmzxUyeSyYDN+EbYwlzMsXd3FxCuLsjxcajO4g5O5JsO5knyYZ09ANcHpJgyz3jzi1Ju/20UtwLST/C7T/GzT/BFT2pP2JvRHzTZ5lDqeB3CS6UN6bcsTWfWxhyGY1FWnUHN0miQUmSuK57HLzPgMT2K1Ek5GRAjf2u9B7c0JmaSyVs9zwTLpN53yDMm9/dUbtdz4Ar/H4ZOpFbq+NFcfeLDzDeYf37pMTGEdZxGTUxdlIhzMEaLqOhMVa5pcR4Yi9zGff0tJmakyl4mXu2sXYE7w27epF7vlhi1bQ2XMjCxbmis8aqqDJ+lcv2hgvoUZ2RxRTn8n4NdtcYhei4vSxfhTWMenB75TpzlaiBwai97KQ5CnC5BiOMcumayTzJ+3qBG5erubuTvqMxLjvZ7ZAPOujPYpSbIm1mjXdT0yALPNIPsOKCcgKowbAds3VkytWpny04GqV+JVlxC0mfkniOjKCPp+fSI/J6BbTXfj/lGIe4+j3ahutB05QDR6X3AhdYvh4BwLz4/uDu/FYu1M9EQnM617odGFccgOaKr2eD2TkBnlMDrFtJVtxdkZ+/5orrHnpMHYYdVf8+xxLjo9wj3OCgbBD+7/tjXlj0R8S3XcO1UgnvmT/ORfwelOu+iwun5X6eG4ID/PNcD3TlMS5/Hxf0Av7DXP9XcMF993/uL+SCfuwbudg6+re4h1/BvbiH8fq/Ch6lXuncCHRCLLnQfpXVMaXXAoBvolTGUNoJOY9suAfNRSI7ARbbcaHztwFX4lxnIEwDvX2cC/hXnja8hHIiYHSDcwH/WW/vFxC0hGDsgHHBeDBZjreYaIE3wZlDjAvH3QfOpeQzyZvUb5SkUG4CDoYxLoM+umrk0vfjZcqg4V6lH3QZVcAZkQLsJJRbr05fPam3sheMp1epAgMVlAsmLlYog68BUa4DD7C1kNwOyiXshcTZTHA3L3Df48l6SMZhwd79O2Y0ln3HuUiqwU5oBm2BO5UNvaYUS+xg/tXY00Tf8LJcNGGouPh9KAU3aXNd8AT4IpfI9Un33ZDuwlte5pL4hblVLmULNVwioXPYSMvXOTouEemqAyLrlnPQWi6hLLG/r7vUGl9McXV1FENZgR25CLRX7gbcoYwid9EqiucODpPUoJ5DcU3qZBiP0+6YRKNTU5ZloRTeNfxVlOWlj45VHRtV9wrXtD6HOWL04+JJ5wdNr0kpTItmFPcz9UjuZ+qvRPLPcT9S1yeiD9Ux9h+q2yyJybX42yUbYnBr+naxekeM6g/eLJ4orrt53TURnuI2mw/wUPmjnNWtDWaON3KzTb++cI1xB+c83HRqTd7xGBSUFiV5L2OD7M7dFWyrXUtWk8d0DYLCfJPtw5G3sPoefLno5fT7qLy+e+N/gz7vwDld84UuIyn/TKazQsGHYLM8BrlBffAKndIuesiY/AHqvlH4Tu0+oAAAAABJRU5ErkJggg==" alt="" class="logo-main-blogger">
+                <p>Blogger</p>
+            </div>
+            <div class="nav-bar-search">
+                <form action="#">
+                    <input class="nav-button nb001" id="user-blog-input-heading" type="text" placeholder="Search">
+                    <input class="nav-button" id="nb002" value="Search" onclick="takevalue()" onsubmit="takevalue()">
+                </form>
+            </div>
+            <div class="nav-bar-right">
+                    <div class="inner-right-nav-bar">
+                        <button><img src="https://img.freepik.com/free-icon/user_318-159711.jpg" alt=""></button>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-index-division">
+        <div class="nav-bar-side">
+            <p class="Side-bar-Blog-Heading">Write A Blog<ion-icon name="caret-down"></ion-icon></p>
+            <button class="Blogpost-Create-Btn"><ion-icon name="add"></ion-icon>NEW POST</button>
+            <hr>
+            <ul>
+                <li><ion-icon name="list"></ion-icon>Posts</li>
+                <li><ion-icon name="stats-chart"></ion-icon>Stats</li>
+                <li><ion-icon name="chatbox"></ion-icon>Comments</li>
+                <li><ion-icon name="card"></ion-icon>Earnings</li>
+                <li><ion-icon name="newspaper"></ion-icon>Pages</li>
+                <li><ion-icon name="layers"></ion-icon>Layout</li>
+                <li><ion-icon name="create"></ion-icon>Theme</li>
+                <li><ion-icon name="settings"></ion-icon>Settings</li>
+                <li><ion-icon name="bookmark"></ion-icon>Reading List</li>
+            </ul>
+            <hr>
+            <ul>
+                <li><ion-icon name="book"></ion-icon>View Other Blogs</li>
+                <li><ion-icon name="eye"></ion-icon>Preview Blogpost</li>
+            </ul>
+            <p class="side-bar-footer">&#169; Copyright 2023 by @Homes</p>
+            <p class="side-bar-footer">Terms And Condition</p>
+        </div>
+        <div class="blogpost-general-info">
+        </div>
+        <div class="body-index-blog-division">
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

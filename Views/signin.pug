@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In Page</title>
+    <link rel="stylesheet" href="../static/CSS/Sign In Page/style.css">
+    <link rel="stylesheet" href="../static/CSS/Sign In Page/signInForm.css">
+</head>
+<body class="body">
+    <div class="nav-top">
+        <div class="nav-top-left">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAB2CAMAAADFu/wdAAAAZlBMVEXwajX////wZCrwZi7wbDjwaDHvYCH1po71qZLxcD/wYyf2sJvvXx798OzuUwDxc0TzjWz75N34v6/vWxTvWAv3uafyf1f/+/nxelD73NT6183zk3Txdkn60MX+9fLzh2L0nIH5ybu6kI7XAAAE6klEQVRoge2ba3eqOhCGYzBRQyg3uSOX//8ndwB1o50hCVpcPfu8H7pai3mcXGcmI9nNFEaHruuqqgqCtm3TUXme13Xt+/7pqv1NZND+WdND6nm/rtV7VQttGwRVdbxkcxT5+2t0koJSZxD7JmKt+btVk5TLqgC4PeMrGrcS5YH3xPUq+dPUkSz6B27oiw2oSkweZ9xw72yDVYqPd67nb4dV4OTGDTbq5KtkMXEjuSmWMD8buJmzxUyeSyYDN+EbYwlzMsXd3FxCuLsjxcajO4g5O5JsO5knyYZ09ANcHpJgyz3jzi1Ju/20UtwLST/C7T/GzT/BFT2pP2JvRHzTZ5lDqeB3CS6UN6bcsTWfWxhyGY1FWnUHN0miQUmSuK57HLzPgMT2K1Ek5GRAjf2u9B7c0JmaSyVs9zwTLpN53yDMm9/dUbtdz4Ar/H4ZOpFbq+NFcfeLDzDeYf37pMTGEdZxGTUxdlIhzMEaLqOhMVa5pcR4Yi9zGff0tJmakyl4mXu2sXYE7w27epF7vlhi1bQ2XMjCxbmis8aqqDJ+lcv2hgvoUZ2RxRTn8n4NdtcYhei4vSxfhTWMenB75TpzlaiBwai97KQ5CnC5BiOMcumayTzJ+3qBG5erubuTvqMxLjvZ7ZAPOujPYpSbIm1mjXdT0yALPNIPsOKCcgKowbAds3VkytWpny04GqV+JVlxC0mfkniOjKCPp+fSI/J6BbTXfj/lGIe4+j3ahutB05QDR6X3AhdYvh4BwLz4/uDu/FYu1M9EQnM617odGFccgOaKr2eD2TkBnlMDrFtJVtxdkZ+/5orrHnpMHYYdVf8+xxLjo9wj3OCgbBD+7/tjXlj0R8S3XcO1UgnvmT/ORfwelOu+iwun5X6eG4ID/PNcD3TlMS5/Hxf0Av7DXP9XcMF993/uL+SCfuwbudg6+re4h1/BvbiH8fq/Ch6lXuncCHRCLLnQfpXVMaXXAoBvolTGUNoJOY9suAfNRSI7ARbbcaHztwFX4lxnIEwDvX2cC/hXnja8hHIiYHSDcwH/WW/vFxC0hGDsgHHBeDBZjreYaIE3wZlDjAvH3QfOpeQzyZvUb5SkUG4CDoYxLoM+umrk0vfjZcqg4V6lH3QZVcAZkQLsJJRbr05fPam3sheMp1epAgMVlAsmLlYog68BUa4DD7C1kNwOyiXshcTZTHA3L3Df48l6SMZhwd79O2Y0ln3HuUiqwU5oBm2BO5UNvaYUS+xg/tXY00Tf8LJcNGGouPh9KAU3aXNd8AT4IpfI9Un33ZDuwlte5pL4hblVLmULNVwioXPYSMvXOTouEemqAyLrlnPQWi6hLLG/r7vUGl9McXV1FENZgR25CLRX7gbcoYwid9EqiucODpPUoJ5DcU3qZBiP0+6YRKNTU5ZloRTeNfxVlOWlj45VHRtV9wrXtD6HOWL04+JJ5wdNr0kpTItmFPcz9UjuZ+qvRPLPcT9S1yeiD9Ux9h+q2yyJybX42yUbYnBr+naxekeM6g/eLJ4orrt53TURnuI2mw/wUPmjnNWtDWaON3KzTb++cI1xB+c83HRqTd7xGBSUFiV5L2OD7M7dFWyrXUtWk8d0DYLCfJPtw5G3sPoefLno5fT7qLy+e+N/gz7vwDld84UuIyn/TKazQsGHYLM8BrlBffAKndIuesiY/AHqvlH4Tu0+oAAAAABJRU5ErkJggg==" alt="">
+            <p>Blogger</p>
+        </div>
+        <div class="nav-top-right">
+            <button>Log In</button>
+        </div>
+    </div>
+    <div class="main-index">
+        <div class="form-sign-in">
+            <h1>Sign In</h1>
+            <form action="/signin" method="post">
+                <input class="input-bar" id="email-add-input" type="email" name="UserId" placeholder="Email Id"><br>
+                <input class="input-bar" id="pass-input" type="password" name="Password" placeholder="Password">
+                <div style="display: flex;">
+                    <input type="checkbox" name="Remember Me" id="" style="margin-right: 3px;">
+                    <p>Remember Me</p>
+                </div>
+                <!-- //- <input id="submit-btn" type="submit" value="Sign In"> -->
+                <input id="submit-btn" type="submit" value="Sign In">
+                <hr>
+                <button class="sign-in-opt-btn" id="google"><ion-icon name="logo-google" class="icon"></ion-icon>Sign In Using Google</button>
+                <button class="sign-in-opt-btn" id="facebook"><ion-icon name="logo-facebook" class="icon"></ion-icon>Sign In using Facebook</button>
+            </form>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

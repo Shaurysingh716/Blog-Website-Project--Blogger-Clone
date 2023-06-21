@@ -4,46 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project File-1 Server Side</title>
-    <link rel="stylesheet" href="../static/CSS/styles_navbar.css">
-    <link rel="stylesheet" href="../static/CSS/styles_mainBody.css">
-    <link rel="stylesheet" href="../static/CSS/side_navbar.css">
-    <script src="../static/JS/script_main.js"></script>
+    <link rel="stylesheet" href="../static/CSS/Main Index/style.css">
+    <link rel="stylesheet" href="../static/CSS/Main Index/styles_modal.css">
 </head>
-<body class="body">
+<body class="body" onload="changeBackgroundImage()">
+    <div class="overlay"></div>
     <div class="nav-bar-top">
-        <input type="text" id="user-blog-input-heading" placeholder="Add a Blog">
-        <button onclick="takevalue()" onsubmit="takevalue()">Submit</button>
-    </div>
-    <div class="body-index-division">
-        <div class="nav-bar-side">
-            <p class="Side-bar-Blog-Heading">Football Blog<ion-icon name="caret-down"></ion-icon></p>
-            <button class="Blogpost-Create-Btn"><ion-icon name="add"></ion-icon>NEW POST</button>
-            <hr>
-            <ul>
-                <li><ion-icon name="list"></ion-icon>Posts</li>
-                <li><ion-icon name="stats-chart"></ion-icon>Stats</li>
-                <li><ion-icon name="chatbox"></ion-icon>Comments</li>
-                <li><ion-icon name="card"></ion-icon>Earnings</li>
-                <li><ion-icon name="newspaper"></ion-icon>Pages</li>
-                <li><ion-icon name="layers"></ion-icon>Layout</li>
-                <li><ion-icon name="create"></ion-icon>Theme</li>
-                <li><ion-icon name="settings"></ion-icon>Settings</li>
-                <li><ion-icon name="bookmark"></ion-icon>Reading List</li>
-            </ul>
-            <hr>
-            <ul>
-                <li><ion-icon name="book"></ion-icon>View Other Blogs</li>
-                <li><ion-icon name="eye"></ion-icon>Preview Blogpost</li>
-            </ul>
-            <p class="side-bar-footer">&#169; Copyright 2023 by @Homes</p>
-            <p class="side-bar-footer">Terms And Condition</p>
+        <div class="nav-image-heading">
+            <img src="https://play-lh.googleusercontent.com/cWG9-bk2_zLdKsN9vsYEdbCReVfzgXU6FeHUmLI8a24FoZ05TpOLYXInCQ278FTwCw" alt="">
+            <p>Blogger</p>
         </div>
-        <div class="blogpost-general-info">
-        </div>
-        <div class="body-index-blog-division">
+        <div class="nav-image-button-wrapper">
+            <button class="Nav-Button" onclick="ShowSignIn()">Log In</button>
         </div>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <div class="main-boy-container">
+        <div class="main-body-text">
+            <div class="heading">
+                <h1 class="body-index-heading" id="word">&nbsp;</h1>
+                <h1 class="body-index-heading">Write You Mind Out - Blogger</h1>
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="main-index-button">Learn More</button>
+            <button class="main-index-button" id="Sign-In-Btn" onclick="ShowSignIn()">Sign In</button>
+        </div>
+    </div>
+    <div class="Sign-In-Modal">
+        <div class="sign-in-form">
+            <span onclick="RemoveSignIn()">&times;</span>
+            <h1>Login</h1>
+            <form action="/" method="post">
+                <input name = 'UserId' class="user-credentials" id="user-id" type="email" placeholder="Email-Id"><br>
+                <input name = 'Password' class="user-credentials" id="user-password" type="password" placeholder="Password"><br>
+                <input class="Remember-Me" type="checkbox" name="Remember Me" id="">Remember Me <br><a class="modal-link" href="/signin">Registered User? Sign In</a><br>
+                <input id="Sign-In" type="submit" value="Create My Account">
+            </form>
+        </div>
+    </div>
+    <script src="../static/JS/Main Index/script.js"></script>
+    <script src="../static/JS/Main Index/effects.js"></script>
+    <script src="../static/JS/Main Index/modals.js"></script>
 </body>
 </html>
