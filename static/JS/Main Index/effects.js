@@ -1,13 +1,5 @@
-// var i = 0;
-// var txt = "Vacation", "Science", "Technology","Arts","Diary";
-// var speed = 100;
-// function typewriter() {
-//     if (i<txt.length) {
-//         document.getElementById('TypingEffect').innerHTML += txt.charAt(i)
-//         i++
-//         setTimeout(typewriter,speed)
-//     }
-// }
+// MIT Licensed :: 
+
 const words = ["Vacations.", "Science.", "Tech.","Arts.","Diary."];
 let i = 0;
 let timer;
